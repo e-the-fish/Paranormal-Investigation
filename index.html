@@ -8,6 +8,27 @@
         #him-link {
             display: none;
         }
+
+        /* Style for the right arrow container */
+        .arrow-container {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        /* Style for the right arrow */
+        .arrow {
+            font-size: 24px;
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -35,25 +56,24 @@
                  claiming that their houses were haunted. We  did some research and one of the familys, The Robinson's house was the site of a famous murder. Maybe
                  the whole haunting thing wasn't just paranoia. Anyway, the murder was done in 1843, a rich family were killed by a servant who had gone insane. Sadly, 
                  we couldn't interview the Robinsons about their specific experience, but, its still a strange coincidence.
-            </h3>
-
-            <h2>7/5/2003</h2>
-            <h3>
-               So, after that history lesson, we're finally ready to do some investigating. One of the main mysteries in the town is the Winn Graveyard.
-               The Winn Graveyard has been part of the town since it was founded by Edgar Winn Jr. The graveyard has always had a reputation for being haunted
-               and some say that Edgar's ghost still haunts the graveyard. So next post, we're gonna check out the Graveyard and see if we can find some clues 
-               that help us figure out what is going on.
+        
         </article>
     </main>
+
+    <!-- Right arrow container -->
+    <div class="arrow-container" onclick="location.href='Commentpage.html';">
+        <span class="arrow">→</span>
+    </div>
+
     <script>
-         // Function to handle click on the "investigate" link
-         var investigateLink = document.getElementById("investigate-link");
+        // Function to handle click on the "investigate" link
+        var investigateLink = document.getElementById("investigate-link");
         investigateLink.addEventListener("click", function() {
             var password = prompt("Enter the password:");
             // Check if the password is correct
             if (password === "hewatches") {
                 // Redirect the user to the desired page
-                window.location.href = "him.html";
+                window.location.href = "Him.html";
             } else {
                 alert("Incorrect password! Please try again.");
             }
@@ -61,8 +81,6 @@
     </script>
 </body>
 </html>
-        
-
         
 
      
