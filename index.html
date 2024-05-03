@@ -29,13 +29,26 @@
             font-size: 24px;
             color: black;
         }
+
+        /* Style for the "About Us" button */
+        .button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px; /* Adjust padding as needed */
+            background-color: #007bff; /* Blue color, change as needed */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Paranormal Investigations</h1>
-        <h2>This blog is dedicated to all of the strange happenings in this town.</h2>
     </header>
     <main>
         <h3 class="written-by"> written by [REDACTED], [REDACTED], [REDACTED], and [REDACTED]</h3>  
@@ -65,6 +78,9 @@
         <span class="arrow">→</span>
     </div>
 
+    <!-- "About Us" button -->
+    <button class="button" onclick="location.href='Aboutus.html';">About Us</button>
+
     <script>
         // Function to handle click on the "investigate" link
         var investigateLink = document.getElementById("investigate-link");
@@ -81,6 +97,4 @@
     </script>
 </body>
 </html>
-        
 
-     
