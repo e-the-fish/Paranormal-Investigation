@@ -1,21 +1,74 @@
-<html>
-    <head>
-        <title>
-            Paranormal Investigations
-        </title>
-        <header>
-            <h1>
-                About us
-            </h1>
-            <h3>
-                We are Paranormal Investigations, a group of teens who want to find out what is going on in our town.
-                Weird things have been going on in the town of Willowgrass, and we decided, 
-                since we don't have anything better to do,
-                why not start doing some investigating. 
-                There are only four of us, [REDACTED],[REDACTED],[REDACTED], and [REDACTED], but
-                maybe we can get to the bottom of theses mysterious events. 
-                 
-            </h3>
-        </header>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us - Paranormal Investigations</title>
+    <style>
+        .button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        /* Center header content */
+        header {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About us</h1>
+        <h3>
+            We are Paranormal Investigations, a group of teens who want to find out what is going on in our town.
+            Weird things have been going on in the town of Willowgrass, and we decided, 
+            since we don't have anything better to do,
+            why not start doing some investigating. 
+            There are only four of us, [REDACTED],[REDACTED],[REDACTED], and [REDACTED], but
+            maybe we can get to the bottom of these mysterious events. 
+        </h3>
+    </header>
+
+    <!-- Hidden audio element -->
+    <audio id="backgroundAudio" loop style="display: none;">
+        <source src="Morseghost.mp3" type="audio/mpeg">
+    </audio>
+    <button class="button" onclick="location.href='index.html';">Back</button>
+
+    <script>
+        // Function to play background audio
+        function playBackgroundAudio() {
+            var audioElement = document.getElementById('backgroundAudio');
+            audioElement.play();
+            setTimeout(function() {
+                audioElement.pause();
+                setTimeout(function() {
+                    audioElement.play();
+                    setTimeout(function() {
+                        audioElement.pause();
+                    }, 30000); // Play for 30 seconds
+                }, 18000); // 3 minutes break
+            }, 200); // 2 seconds delay before starting
+        }
+
+        // Call the function to play the background audio initially
+        playBackgroundAudio();
+
+        // Adjust volume
+        var audioElement = document.getElementById('backgroundAudio');
+        audioElement.volume = 0.20; // Example: Set the volume to 4%
+    </script>
+
+    <!-- Additional audio element for background music -->
+    <audio autoplay loop style="display: none;">
+       <source src="Untitled video - Made with Clipchamp.mp3" type="audio/mpeg">
+    </audio>
+</body>
 </html>
