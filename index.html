@@ -30,11 +30,14 @@
             color: black;
         }
 
-        /* Style for the "About Us" button */
-        .button {
+        /* Style for the "About Us" button */ 
+        .Buttons {
             position: fixed;
             top: 20px;
             left: 20px;
+      
+        }
+        .button {
             padding: 10px 20px; /* Adjust padding as needed */
             background-color: #007bff; /* Blue color, change as needed */
             color: white;
@@ -43,6 +46,7 @@
             font-size: 16px;
             cursor: pointer;
         }
+
 
         /* Style for hiding the audio element */
         audio {
@@ -61,7 +65,7 @@
             <h2>7/1/2003</h2>
             <h3>
                 Hey everyone this is our first post. I'm [REDACTED], and I'm with my friends [REDACTED], [REDACTED], and [REDACTED]. For those that dont know,
-                we live in the town of Willowgrass, Maine and recently, some weird things have been going on. In the last 4 months, 11 people have disappeared, there have
+                we live in the town of Willowgrass. and recently, some weird things have been going on. In the last 4 months, 11 people have disappeared, there have
                 been many  people claiming that their houses are haunted, and Farmer Paul McGregor claims that his cows were taken by Aliens. So, we decided to make a Blog
                 to <span id="investigate-link" style="text-decoration: underline; cursor: pointer;">investigate</span>  what the heck is going on in Willowgrass.
             </h3>              
@@ -75,6 +79,17 @@
                  the whole haunting thing wasn't just paranoia. Anyway, the murder was done in 1843, a rich family were killed by a servant who had gone insane. Sadly, 
                  we couldn't interview the Robinsons about their specific experience, but, its still a strange coincidence.
             </h3>
+        </h3>              
+        <h2>7/5/2003</h2>
+        <h3>
+             Now that we've explained what we're doing, lets give you some more context on what's happened.
+             Firstly, as we already mentioned, there have been many unexplained disappearances. The Willowgrass 
+             County police have been searching everywhere to find them but with no luck. We can't disclose the names of them, but they all
+             went missing at around the same time. Another weird thing that happened is that three familys that have been living here just recently left,
+             claiming that their houses were haunted. We  did some research and one of the familys, The Robinson's house was the site of a famous murder. Maybe
+             the whole haunting thing wasn't just paranoia. Anyway, the murder was done in 1843, a rich family were killed by a servant who had gone insane. Sadly, 
+             we couldn't interview the Robinsons about their specific experience, but, its still a strange coincidence.
+        </h3>
         </article>
     </main>
 
@@ -90,7 +105,12 @@
     </div>
 
     <!-- "About Us" button -->
-    <button class="button" onclick="location.href='Aboutus.html';">About Us</button>
+    <div class="Buttons"> 
+        
+        <button class="button" onclick="location.href='Aboutus.html';">About Us</button>
+        <button class="button" onclick="location.href='ghostgame.html';">Ghost Hunting Sim</button>
+    </div>
+    
 
     <script>
         // Function to handle click on the "investigate" link
@@ -100,7 +120,7 @@
             // Check if the password is correct
             if (password === "hewatches") {
                 // Redirect the user to the desired page
-                window.location.href = "Him.html";
+                window.location.href = "missing.html";
             } else {
                 alert("Incorrect password! Please try again.");
             }
@@ -108,6 +128,3 @@
     </script>
 </body>
 </html>
-
-
-
